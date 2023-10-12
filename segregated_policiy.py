@@ -118,8 +118,8 @@ def write_aws_policy_to_file(policy, output_dir, policy_type):
         json.dump(policy, output_file, indent=4)
 
 if __name__ == "__main__":
-    file_path = os.path.abspath(r'C:\Users\1998484\Documents\Code\hdfs_policy.json')
-    output_dir = os.path.abspath(r'C:\Users\1998484\Documents\Code\output-aws-policies')
+    file_path = os.path.abspath(r'<path>\hdfs_policy.json')
+    output_dir = os.path.abspath(r'<path>\output-aws-policies')
 
     # Create the output directory if it doesn't exist
     os.makedirs(output_dir, exist_ok=True)
