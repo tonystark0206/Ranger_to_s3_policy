@@ -115,12 +115,12 @@ def convert_hdfs_policy(ranger_policy):
     return iam_policy
 
 if __name__ == "__main__":
-    file_path = os.path.abspath(r'C:\Users\1998484\Documents\Code\hdfs_policy.json')
-    output_dir = os.path.abspath(r'C:\Users\1998484\Documents\Code\output-aws-policies')
+    file_path = os.path.abspath(r'<path>\hdfs_policy.json')
+    output_dir = os.path.abspath(r'<path>\output-aws-policies')
 
     # Create the output directory if it doesn't exist
     os.makedirs(output_dir, exist_ok=True)
-    output_dir_file=os.path.abspath(r'C:\Users\1998484\Documents\Code\output-aws-policies\output.json')
+    output_dir_file=os.path.abspath(r'<path>\output.json')
     with open(file_path) as ranger_file:
         ranger_data = json.load(ranger_file)
         print('dataloaded', ranger_data)
