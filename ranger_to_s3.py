@@ -50,7 +50,7 @@ with open(output_file_path, "w") as output_file:
     json.dump(aws_s3_policies, output_file, indent=4)
 '''
 # Apply the AWS S3 policies to an S3 bucket using boto3
-bucket_name = "s3a://edhub-test/"
+bucket_name = "s3a://<bucket-name>/"
 s3_client = boto3.client("s3")
 for s3_policy in aws_s3_policies:
     s3_client.put_bucket_policy(Bucket=bucket_name, Policy=json.dumps(s3_policy))
